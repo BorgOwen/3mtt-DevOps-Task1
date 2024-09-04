@@ -1,0 +1,27 @@
+Script started on 2024-09-03 13:48:28-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="62" LINES="14"]
+[?2004h]0;eremkali@kali: ~[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m cd Downloads
+[?2004l
+[?2004h]0;eremkali@kali: ~/Downloads[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~/Downloads[;32m]
+[;32m└─[1;34m$[0m ls
+[?2004l[0m[01;34mDirectoryA[0m
+[01;34mDirectoryB[0m
+kali-linux-2024.2-installer-purple-amd64.iso
+[00;90mkali-linux-2024.VGNNOXH2.2-installer-purple-amd64.iso.part[0m
+
+[?2004h]0;eremkali@kali: ~/Downloads[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~/Downloads[;32m]
+[;32m└─[1;34m$[0m cd DirectoryA
+[?2004l
+[?2004h]0;eremkali@kali: ~/Downloads/DirectoryA[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~/Downloads/DirectoryA[;32m]
+[;32m└─[1;34m$[0m ls
+[?2004lfile1.txt  fileA.pdf
+
+[?2004h]0;eremkali@kali: ~/Downloads/DirectoryA[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~/Downloads/DirectoryA[;32m]
+[;32m└─[1;34m$[0m mv file1.txt [K[K[K[K[K[K[K[K[K[K-i file1.txt file1.txt
+[?2004lmv: 'file1.txt' and 'file1.txt' are the same file
+
+[?2004h]0;eremkali@kali: ~/Downloads/DirectoryA[;32m┌──([1;34meremkali㉿kali[;32m)-[[0;1m~/Downloads/DirectoryA[;32m]
+[;32m└─[1;34m$[0m exit
+[?2004lexit
+
+Script done on 2024-09-03 13:49:39-05:00 [COMMAND_EXIT_CODE="1"]

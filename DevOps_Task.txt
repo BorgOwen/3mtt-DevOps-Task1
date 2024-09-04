@@ -1,0 +1,1 @@
+This is a list of basic linux commands learnt today; pwd, ls, cd, echo, echo -e, mkdir, rmdir, mv, cat, rm, head, find, sudo, whoami
