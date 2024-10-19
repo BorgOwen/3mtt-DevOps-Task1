@@ -1,0 +1,19 @@
+CLASS PROJECTS
+- A new employee just joined your organization and you've been asked to create a user account for the employee and add him to the finance group. 
+This employee should have read and write access to the records file in the documents folder and one other user in the hr department should have just read access to this file. Finally ensure that the file is encrypted.
+
+- A new contractor, John, joins your organization. Create a user account for John, add him to the developers group, and grant him read-only access to the project repository.
+
+
+- Your organization has a shared document folder. Create a user account for Emily in the marketing department and grant her read and write access to the documents folder. Additionally, grant read-only access to David in the sales department.
+
+
+- A temporary employee, Michael, joins your organization for a project. Create a user account for Michael, add him to the project group, and grant him read and write access to the project folder. Ensure that Michael's account is deleted after 30 days.
+
+
+- Your organization has a sensitive data folder. Create a user account for Sarah in the HR department and grant her read and write access to the sensitive data folder. Encrypt the folder and ensure that only authorized personnel can access it.
+
+
+- A team lead, Tom, needs to manage user accounts for his team. Create a user account for Tom and grant him permission to create, modify, and delete user accounts for his team members.
+
+
