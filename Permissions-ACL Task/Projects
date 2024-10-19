@@ -1,19 +1,35 @@
 CLASS PROJECTS
+
 - A new employee just joined your organization and you've been asked to create a user account for the employee and add him to the finance group. 
 This employee should have read and write access to the records file in the documents folder and one other user in the hr department should have just read access to this file. Finally ensure that the file is encrypted.
 
 - A new contractor, John, joins your organization. Create a user account for John, add him to the developers group, and grant him read-only access to the project repository.
 
-
 - Your organization has a shared document folder. Create a user account for Emily in the marketing department and grant her read and write access to the documents folder. Additionally, grant read-only access to David in the sales department.
-
 
 - A temporary employee, Michael, joins your organization for a project. Create a user account for Michael, add him to the project group, and grant him read and write access to the project folder. Ensure that Michael's account is deleted after 30 days.
 
-
 - Your organization has a sensitive data folder. Create a user account for Sarah in the HR department and grant her read and write access to the sensitive data folder. Encrypt the folder and ensure that only authorized personnel can access it.
-
 
 - A team lead, Tom, needs to manage user accounts for his team. Create a user account for Tom and grant him permission to create, modify, and delete user accounts for his team members.
 
+MY SOLUTIONS PROCESS
 
+1) Create the specified Accounts and groups 
+2) Create the specified folders/documents in /usr/local/share/
+3) Grant specified permission rights to specified users/groups using chmod/chown
+4) Create a temp account using sudo adduser --expiredate 2024-11-17 -m michael command
+5) Encrypt files with gpg
+6) Encrypt folders with encfs
+7) Create an admin account for Tom(Team Lead), add him to the sudo wheels group
+8) Edit the sudoers file (sudo visudo), add alias's for specific commands pertaining to user accounts modification, assigned those as user priviledges for the user account tom_admin and the only commands that account can run with sudo as part of the wheel group e.g turn off ability for tom_admin to run sudo visudo/limit permissions to only modifying his teams accounts.
+9) Checked file permissions for confirmation
+10) Logged in as select users to test priviledges and ensured they don't have access to secured areas.
+
+CHALLENGES I RAN INTO IN THE PROCESS
+
+1) I created a shared folder in the /home directory at first instead of in /usr or /opt
+2) Locked myself out of some folders in the beginning because I changed ownership to specific users
+3) Tried to encrypt folders with gpg, veracrypt. All failed
+4) The first admin account I created could access other areas and even encypted information because it belonged to the sudo group(security risk)
+5) I had trouble with the sudoers file. Didn't understand how the admin user could still access some sectors even after specifying the commands they could run. I got some syntax wrong, removed tom_admin from sudo exclusively and needed to comment out unused parts before it finally worked. 
